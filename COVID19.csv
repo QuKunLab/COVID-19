@@ -1,0 +1,8 @@
+library_id,molecule_h5,batch
+P1-1r1,P1-1r1_outs/outs/molecule_info.h5,P1-1r1
+P1-1r2,P1-1r2_outs/outs/molecule_info.h5,P1-1r2
+P1-2r1,P1-2r1_outs/outs/molecule_info.h5,P1-2r1
+P1-2r2,P1-2r2_outs/outs/molecule_info.h5,P1-2r2
+P2-1,P2-1_outs/outs/molecule_info.h5,P2-1
+P2-2,P2-2_outs/outs/molecule_info.h5,P2-2
+P2-3,P2-3_outs/outs/molecule_info.h5,P2-3
