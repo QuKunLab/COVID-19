@@ -26,10 +26,13 @@ Users need to copy the scripts to the same path as the raw data folders (i.e. th
     bash step0_map_raw_data_using_cellranger.sh
 
 ### 3.2 Detect doublet by using Scrublet
-Run step1_detect_doublets_using_scrublet.ipynb in Jupyter notebook.
+Run **step1_detect_doublets_using_scrublet.ipynb** in Jupyter notebook. This script decects doublets from the cells of patients and healthy controls respectively.
 
 ### 3.3 Integrate patients with healthy controls
-Run step2_integrate_patients_and_healthy_controls.R in R studio.
+Run **step2_integrate_patients_and_healthy_controls.R** in R studio. This script also cluster cells and perform UMAP analysis on the scRNA-seq data.
 
 ### 3.4 Plot UMAP diagram and marker gene expression violinplot
-Run step3_plot_umap_and_marker_gene_expression.ipynb in Jupyter notebook.
+Run **step3_plot_umap_and_marker_gene_expression.ipynb** in Jupyter notebook. This script illustrates UMAP diagram for the cells and violinplot for the expression of marker genes. All diagrams will be automatically presented in the jupyter interface.
+
+### 3.5 Generate DEGs between different disease stages 
+Run **step4_find_DEGs_between_disease_stages.ipynb** in Jupyter notebook. This script generates DEGs between different disease stages, for CD14 monocytes and effector CD8 T cells respectively. It also present the expression heatmap of DEGs in PNG format file.
