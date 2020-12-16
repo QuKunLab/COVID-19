@@ -29,8 +29,8 @@ ncov_filtered <- SubsetData(ncov_filtered, cells=ncov_cells)
 #
 #
 #### integrated cells from healthy controls and COVID-19 patients ####
-overlap_genes <- intersect(rownames(ncov_filtered), rownames(pbmc_filtered))
-pbmc.list <- c(pbmc_filtered, ncov_filtered)
+overlap_genes <- intersect(rownames(ncov_filtered), rownames(healthy_filtered))
+pbmc.list <- c(healthy_filtered, ncov_filtered)
 names(pbmc.list) = c('healthy', 'covid19')
 pbmc.anchors <- FindIntegrationAnchors(object.list=pbmc.list, dims = 1:40)
 pbmc.integrated <- IntegrateData(anchorset = pbmc.anchors, dims = 1:40, features.to.integrate=overlap_genes)
